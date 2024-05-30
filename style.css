@@ -11,6 +11,12 @@ body{
 }
 /* Navbar Style */
 
+img:hover,
+button:hover{
+  cursor: pointer;
+}
+
+
 .container{
   width: 1200px;
 }
@@ -299,6 +305,21 @@ body{
 .chennai-tour__gallery{
   flex-basis: 20%;
   flex-grow: 1;
+  position: relative;
+}
+
+.chennai-tour__gallery div,
+.asia__gallery div{
+  width: 25px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.chennai-tour__gallery div img{
+  background-color: white;
+  border-radius: 50px;
+  padding: 5px;
 }
 
 .chennai-tour__gallery img{
@@ -341,6 +362,21 @@ body{
 .asia__gallery{
   flex-basis: 20%;
   flex-grow: 1;
+  position: relative;
+}
+
+.asia__gallery div{
+  width: 25px;
+  width: 25px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.asia__gallery div img{
+  background-color: white;
+  border-radius: 50px;
+  padding: 5px;
 }
 
 .asia__gallery img{
@@ -414,11 +450,26 @@ body{
   border-radius: 10px;
 }
 
-.destination__card div{
+
+
+.destination__card .wish{
+  width: 25px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.destination__card h1{
   position: absolute;
   bottom: 10px;
   color: white;
   left: 10px;
+}
+
+.destination__card .wish img{
+  background-color: white;
+  border-radius: 50px;
+  padding: 5px;
 }
 
 .wanderer{
@@ -626,6 +677,10 @@ body{
   font-size: 14px;
   text-decoration: none;
   color: black;
+}
+
+.footer a:hover{
+  text-decoration: underline;
 }
 
 .footer__s1__one__title,
