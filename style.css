@@ -16,6 +16,14 @@ button:hover{
   cursor: pointer;
 }
 
+img{
+  transition: 0.3s;
+}
+
+img:hover{
+  transform: scale(1.02);
+  transition: 0.3s;
+}
 
 .container{
   width: 1200px;
@@ -25,7 +33,11 @@ button:hover{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 20px 30px;
+  padding: 12px 30px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
 }
 
 .navbar__logo{
@@ -48,10 +60,12 @@ button:hover{
   padding: 15px;
   border-radius: 25px;
   font-weight: 600;
+  transition: 0.3s;
 }
 .navbar__links p:hover{
   background-color: rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  transition: 0.3s;
 }
 .navbar__links a{
   text-decoration: none;
@@ -236,6 +250,14 @@ button:hover{
   font-size: 16px;
   font-weight: 600;
   margin-top: 20px;
+  border: 1px solid #301D49;
+  transition: 0.2s;
+}
+
+.ad-image-1__s1__desc button:hover{
+  background-color: #5d3097;
+  border: 1px solid #5d3097;
+  transition: 0.2s;
 }
 
 .award{
