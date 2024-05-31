@@ -925,10 +925,11 @@ img:hover{
     margin-top: 25px;
   }
 
-  .footer__s2__one p{
+  .footer__s2__one .copy{
     display: none;
   }
 
+  
   .footer__dropdown select{
     width: 100%;
   }
