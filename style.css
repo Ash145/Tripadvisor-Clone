@@ -40,6 +40,16 @@ img:hover{
   z-index: 1;
 }
 
+.navbar__menu,
+.navbar__user{
+  display: none;
+}
+
+.navbar__menu img,
+.navbar__user img{
+  width: 25px;
+}
+
 .navbar__logo{
   display: flex;
   align-items: center;
@@ -116,12 +126,13 @@ img:hover{
 .categories{
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 20px;
 }
 .categories__container{
-  width: 100%;
   display: flex;
   flex-direction: column;
+  width: 100%;
   align-items: center;
   gap: 30px;
 }
@@ -134,8 +145,10 @@ img:hover{
 
 .categories__links{
   display: flex;
+  justify-content: center;
   gap: 20px;
   align-items: center;
+  width: 100%;
 }
 
 .categories__links div{
@@ -164,11 +177,11 @@ img:hover{
 }
 
 .categories__search{
+  width: 750px;
   display: flex;
   align-items: center;
   border-radius: 50px;
   padding: 5px;
-  width: 750px;
   gap: 15px;
   padding-left: 10px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
@@ -214,11 +227,48 @@ img:hover{
 .ad-image-1__container{
   width: 100%;
   border-radius: 10px;
-  background-color: #dcc8ff;;
+  background-color: #dcc8ff;
+  display: flex;
+  transition: 0.3s;
+}
+
+.ad-image-1__container:hover{
+  transform: scale(1.02);
+  transition: 0.3s;
 }
 
 .ad-image-1__s1{
-  position: relative;
+  display: flex;
+}
+
+.ad-image-1__s1__desc{
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.ad-image-1__s1__desc h1,
+.ad-image-1__s1__desc button{
+  align-self: flex-start;
+}
+
+.ad-image__s2{
+  background-position: center;
+  background-size: cover;
+  flex-grow: 1;
+}
+
+.ad-image__s2 img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.ad-image__s2 img:hover{
+  transform: scale(1);
 }
 
 .ad-image-1__s1 img{
@@ -226,10 +276,6 @@ img:hover{
 }
 
 .ad-image-1__s1__desc{
-  position: absolute;
-  top: 20%;
-  left:10%;
-  width: 30%;
   color: #301D49;
 }
 
@@ -707,7 +753,8 @@ img:hover{
 
 .footer__s1__one__title,
 .footer__s1__two__title,
-.footer__s1__three__title{
+.footer__s1__three__title,
+.footer__s2__one__title{
   font-size: 16px;
   color: #333333;
 }
@@ -788,4 +835,334 @@ img:hover{
 
 .social-media img{
   width: 25px;
+}
+
+
+/* Media Query */
+
+@media screen and (max-width:1200px) {
+  .container{
+    width: 100%;
+  }
+
+  .categories,
+  .award,
+  .chennai-tour,
+  .asia,
+  .explore,
+  .destination,
+  .rentals{
+    margin: 3%;
+  }
+
+  .categories__search{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width:1100px) {
+  body{
+    font-size: 14px;
+  }
+  .categories,
+  .award,
+  .chennai-tour,
+  .asia,
+  .explore,
+  .destination,
+  .rentals{
+    margin: 3%;
+  }
+}
+
+@media screen and (max-width:1024px){
+  
+  .navbar{
+    justify-content: space-between;
+    gap: 20px;
+  }  
+
+  .navbar__signin__1{
+    display: none;
+  }
+
+  .navbar__signin__2{
+    justify-self: right;
+  }
+
+  .navbar__menu{
+    display: block;
+  }
+
+  .navbar__links{
+    display: none;
+  }
+
+  .categories,
+  .award,
+  .chennai-tour,
+  .asia,
+  .explore,
+  .destination,
+  .rentals{
+    margin: 3%;
+  }
+
+  .footer{
+    padding: 40px;
+  }
+
+  .footer__s1 a{
+    display: none;
+  }
+
+  .footer__s1,
+  .footer__container-1{
+    flex-direction: column;
+  }
+
+  .footer__s2__one__title{
+    margin-top: 25px;
+  }
+
+  .footer__s2__one p{
+    display: none;
+  }
+
+  .footer__dropdown select{
+    width: 100%;
+  }
+
+  .footer__copy p{
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width:768px){
+
+  .navbar{
+    justify-content: space-between;
+    font-size: 12px;
+  }
+
+  .navbar__links,
+  .navbar__signin{
+    display: none;
+  }
+
+  .navbar__menu,
+  .navbar__user{
+    display: block;
+  }
+
+  .categories__title,
+  .categories__links{
+    display: none;
+  }
+
+  .categories,
+  .award,
+  .chennai-tour,
+  .asia,
+  .explore,
+  .destination,
+  .rentals{
+    margin: 3%;
+  }
+
+  .ad-image-1__s1{
+    flex-direction: column;
+    align-items: center;
+    justify-content: c;
+  }
+
+  .award__gallery__card h1,
+  .destination__card h1{
+    font-size: 20px;
+  }
+
+  .rentals h2{
+    font-size: 20px;
+  }
+
+  .rentals__container{
+    flex-direction: column;
+  }
+ 
+  .rentals__s1 h4,
+  .rentals__card h3,
+  .rentals__card p{
+    font-size: 14px;
+  }
+
+  .ad-image-1__container{
+    flex-direction: column;
+  }
+
+  .ad-image-1__s1__desc{
+    width: 80%;
+  }
+
+  .best-choice h1{
+    font-size: 24px;
+    align-self: flex-start;
+  }
+
+  .best-choice p{
+    font-size: 20px;
+    align-self: flex-start;
+  }
+
+  .best-choice button{
+    font-size: 16px;
+  }
+
+  .best-choice__s1{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  
+
+  /* .ad-image-1__s1__desc h1{
+    font-size: 20px;
+  }
+
+  .ad-image-1__s1__desc p{
+    font-size: 16px;
+  }
+
+  .ad-image-1__s1__desc button{
+    font-size: 10px;
+  } */
+
+  .award__gallery__card,
+  .chennai-tour__gallery,
+  .asia__gallery,
+  .destination__card{
+    flex-basis: 40%;
+    flex-grow: 1;
+  }
+
+  .wanderer__container{
+    flex-direction: column;
+  }
+
+  .wanderer__card__2{
+    align-items: flex-start;
+  }
+
+  .wanderer__card__2 p{
+    text-align: justify;
+  }
+
+  .best-choice__container{
+    flex-direction: column;
+  }
+
+  .footer__dropdown{
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width:389px) {
+
+  body{
+    font-size: 12px;
+  }
+
+  .navbar{
+    font-size: 10px;
+  }
+
+  .container{
+    width: 90%;
+  }
+
+  .categories__links{
+    font-size: 10px;
+  }
+  .categories__search{
+    width: 90%;
+  }
+
+  .categories,
+  .award,
+  .chennai-tour,
+  .asia,
+  .explore,
+  .destination,
+  .rentals{
+    margin: 3%;
+  }
+
+  .rentals h2{
+    font-size: 18px;
+  }
+
+  .rentals__container{
+    flex-direction: column;
+  }
+ 
+  .rentals__s1 h4,
+  .rentals__card h3,
+  .rentals__card p{
+    font-size: 12px;
+  }
+
+
+  .best-choice h1{
+    font-size: 24px;
+  }
+
+  .best-choice p{
+    font-size: 20px;
+  }
+
+  .best-choice button{
+    font-size: 16px;
+  }
+
+  .best-choice__s1{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .footer{
+    padding: 40px;
+  }
+
+  .footer__s1 a{
+    display: none;
+  }
+
+  .footer__s1,
+  .footer__container-1{
+    flex-direction: column;
+  }
+
+  .footer__s2__one__title{
+    margin-top: 25px;
+  }
+
+  .footer__s2__one p{
+    display: none;
+  }
+
+  .footer__dropdown{
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .footer__dropdown select{
+    width: 100%;
+  }
+
+  .footer__copy p{
+    font-size: 11px;
+  }
+  /* .ad-image-1{
+    flex-direction: column;
+  } */
 }
