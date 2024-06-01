@@ -162,7 +162,7 @@ img{
 .categories__links{
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
   align-items: center;
   width: 100%;
 }
@@ -1072,6 +1072,10 @@ img{
   .wanderer__card__2 p{
     text-align: justify;
   }
+  
+  .rentals__container{
+    margin-top: 15px;
+  }
 
   .best-choice__container{
     flex-direction: column;
@@ -1086,6 +1090,7 @@ img{
 @media screen and (max-width:650px){
   .categories__links{
     font-size: 10px;
+    gap: 10px;
   }
 }
 
