@@ -5,6 +5,7 @@
 
 body{
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
 }
@@ -35,7 +36,13 @@ img:hover{
     padding: 12px 0px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 15px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+    width: 100%;
 }
 
 .navbar__1__menu img,
@@ -52,6 +59,7 @@ img:hover{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 1200px;
 }
 
 .navbar__1__logo{
@@ -163,6 +171,8 @@ img:hover{
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    margin-left: 10px;
+    width: 1200px;
   }
   
   .navbar__2 a{
@@ -170,7 +180,7 @@ img:hover{
     color: #333333;
     font-weight: 600;
     padding: 10px;
-    border-bottom: 1px solid transparent;
+    border-bottom: 2px solid transparent;
     transition: 0.2s;
     font-size: 16px;
   }
@@ -546,6 +556,12 @@ img:hover{
 
     .navbar{
       margin: 0 3%;
+      width: 100%;
+    }
+
+    .navbar__1,
+    .navbar__2{
+      width: 100%
     }
 
     .navbar__1__search{
@@ -569,6 +585,10 @@ img:hover{
   @media screen and (max-width:1024px) {
     body{
       font-size: 14px;
+    }
+
+    .navbar{
+      width: 100%
     }
 
     .navbar__1__links,
@@ -599,6 +619,11 @@ img:hover{
 
     body{
       font-size: 12px;
+    }
+
+    .navbar__1,
+    .navbar__2{
+      width: 100%
     }
 
     .top-hotels__card,
