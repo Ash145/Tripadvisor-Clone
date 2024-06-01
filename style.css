@@ -20,10 +20,26 @@ img{
   transition: 0.3s;
 }
 
-img:hover{
-  transform: scale(1.02);
-  transition: 0.3s;
-}
+  .award img,
+  .chennai-tour img,
+  .asia img,
+  .explore img,
+  .destination img,
+  .rentals img{
+    transition: 0.2s;
+  }
+
+  .award img:hover,
+  .chennai-tour img:hover,
+  .asia img:hover,
+  .explore img:hover,
+  .destination img:hover,
+  .rentals img:hover{
+    opacity: 0.8;
+    transition: 0.2s;
+  }
+
+
 
 .container{
   width: 1200px;
@@ -146,7 +162,7 @@ img:hover{
 .categories__links{
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
   align-items: center;
   width: 100%;
 }
@@ -232,10 +248,7 @@ img:hover{
   transition: 0.3s;
 }
 
-.ad-image-1__container:hover{
-  transform: scale(1.02);
-  transition: 0.3s;
-}
+
 
 .ad-image-1__s1{
   display: flex;
@@ -265,10 +278,6 @@ img:hover{
 .ad-image__s2 img{
   width: 100%;
   border-radius: 10px;
-}
-
-.ad-image__s2 img:hover{
-  transform: scale(1);
 }
 
 .ad-image-1__s1 img{
@@ -956,8 +965,15 @@ img:hover{
     display: block;
   }
 
-  .categories__title,
+  /* ,
+  .categories__links */
+
+
   .categories__links{
+    font-size: 12px;
+  }
+
+  .categories__title{
     display: none;
   }
 
@@ -1067,7 +1083,13 @@ img:hover{
   }
 }
 
-@media screen and (max-width:389px) {
+@media screen and (max-width:650px){
+  .categories__links{
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width:390px) {
 
   body{
     font-size: 12px;
@@ -1082,7 +1104,7 @@ img:hover{
   }
 
   .categories__links{
-    font-size: 10px;
+    font-size: 8px;
   }
   .categories__search{
     width: 90%;

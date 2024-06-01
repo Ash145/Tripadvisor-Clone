@@ -14,6 +14,19 @@ img:hover{
     cursor: pointer;
 }
 
+.top-hotels img,
+.resorts img,
+.destinations img{
+  transition: 0.2s;
+}
+
+.top-hotels img:hover,
+.resorts img:hover,
+.destinations img:hover{
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
 .container{
     width: 1200px;
 }
@@ -25,9 +38,20 @@ img:hover{
     gap: 15px;
 }
 
+.navbar__1__menu img,
+.navbar__1__user{
+  width: 25px;
+}
+
+.navbar__1__menu,
+.navbar__1__user{
+  display: none;
+}
+
 .navbar__1{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .navbar__1__logo{
@@ -138,6 +162,7 @@ img:hover{
   .navbar__2{
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
   }
   
   .navbar__2 a{
@@ -166,6 +191,14 @@ img:hover{
     justify-content: center;
     align-items: center;
     gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .latest__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
   }
 
   .latest__search{
@@ -201,6 +234,11 @@ img:hover{
     gap: 10px;
   }
 
+  .latest__search__dates__1{
+    display: flex;
+    gap: 5px;
+  }
+
   .latest__search img{
     width: 35px;
   }
@@ -226,6 +264,24 @@ img:hover{
     opacity: 0.8;
     transition: 0.2s;
     cursor: pointer;
+  }
+
+  .latest__search__dates__1{
+    display: flex;
+  }
+
+  .latest__search__dates__2{
+    transition: 0.2s;
+  }
+
+  .latest__search__dates__2:hover{
+    opacity: 0.8;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+
+  .latest__search__dates__2 h2{
+    display: none;
   }
 
   .latest__search__dates__people{
@@ -488,6 +544,14 @@ img:hover{
         margin:3%;
     }
 
+    .navbar{
+      margin: 0 3%;
+    }
+
+    .navbar__1__search{
+      width: 30%;
+    }
+
     .latest__search{
         width: 60%;
     }
@@ -502,10 +566,231 @@ img:hover{
     } */
   }
 
+  @media screen and (max-width:1024px) {
+    body{
+      font-size: 14px;
+    }
+
+    .navbar__1__links,
+    .navbar__currency{
+      display: none;
+    }
+
+    .navbar__1__menu{
+      display: block;
+    } 
+
+    .navbar__1__search{
+      width: 45%;
+    }
+
+    .navbar__2{
+      display: none;
+    }
+
+    .footer{
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  }
+
   @media screen and (max-width:768px) {
+
+    body{
+      font-size: 12px;
+    }
+
     .top-hotels__card,
     .resorts__card,
     .destinations__card{
         flex-basis: 40%;
+    }
+
+    .navbar__1__logo h1,
+    .navbar__signin{
+      display: none;
+    }
+
+    .navbar__1__user{
+      display: block;
+    }
+
+    .navbar__1__search{
+      width: 70%;
+    }
+
+    .latest{
+      margin: 0;
+    }
+
+    .latest__search{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .latest__search__bar{
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .latest__search__dates{
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .latest__search__dates__1{
+      justify-content: flex-start;
+    }
+
+    .latest__search__dates__1__one{
+      flex: 4;
+      border: 1px solid rgb(222, 218, 218);
+      border-radius: 50px;    
+    }
+
+    .latest__search__dates__1__one input[type="date"]{
+      border: none;
+    }
+
+    .latest__search__dates__1__one input{
+      width: 100%;
+    }
+
+    .latest__search__dates__1__one input:focus{
+      outline: none;
+    }
+
+    .latest__search__dates__people{
+      flex: 1;
+    }
+
+    .latest__search__dates__2{
+      background-color: #25d988;
+      border-radius: 50px;
+      text-align: center;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .latest__search__dates__2 img{
+      display: none;
+    }
+
+    .latest__search__dates__2 h2{
+      display: block;
+      text-align: center;
+    }
+
+    .latest__search__bar{
+      text-align: center;
+      padding: 10px;
+      width: 90%;
+      border-bottom: 1px solid rgb(214, 211, 211);
+      margin-bottom: 5px;
+    }
+
+    .footer__links{
+      display: none;
+    }
+
+    .footer__dropdown{
+      flex-direction: column;
+    }
+
+    .reviews__container a{
+      display: none;
+    }
+
+    .reviews__container{
+      flex-direction: column;
+      margin-bottom: 40px;
+    }
+
+    .reviews__card__1{
+      padding-top: 15px;
+      border-top: 1px solid rgb(210, 204, 204);
+    }
+
+    .reviews__card__3{
+      margin-top: 20px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border-top: 1px solid rgb(210, 204, 204);
+      border-bottom: 1px solid rgb(210, 204, 204);;
+    }
+
+    .line{
+      display: none;
+    }
+
+  }
+
+  @media screen and (max-width:650px){
+    .navbar__1__search{
+      width: 60%;
+    }
+
+    .latest__search__dates__1__one{
+      flex: 3;
+    }
+
+    .latest__search__dates__people{
+      font-size: 14px;
+    }
+
+    .latest__search__dates div img{
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  @media screen and (max-width:390px){
+    .navbar__1__search{
+      width: 50%;
+    }
+    body{
+      font-size: 12px;
+    }
+
+    .navbar__1__logo img{
+      width: 30px;
+    }
+
+    .navbar__1__menu img{
+      width: 20px;
+    }
+
+    .navbar__1__user{
+      width: 25px;
+    }
+
+    .navbar__1__search{
+      padding: 3px 20px;
+    }
+
+    .top-hotels h1,
+    .resorts h1,
+    .destinations h1{
+      font-size: 20px;
+    }
+
+    .reviews h2{
+      font-size: 20px;
+    }
+
+    .top-hotels a,
+    .resorts a{
+      font-size: 16px;
+      width: 50px;
+    }
+
+    .latest__title{
+      font-size: 12px;
     }
   }
