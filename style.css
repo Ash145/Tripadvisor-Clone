@@ -462,7 +462,7 @@ img{
 }
 
 .explore{
-  /* background-color: #FAF1ED; */
+  background-color: #FAF1ED;
   border-radius: 10px;
   margin-bottom: 25px;
 }
@@ -917,6 +917,14 @@ img{
     margin: 3%;
   }
 
+  .award__gallery__card,
+  .chennai-tour__gallery,
+  .asia__gallery,
+  .destination__card{
+    flex-basis: 40%;
+    flex-grow: 1;
+  }
+  
   .footer{
     padding: 40px;
   }
@@ -1053,13 +1061,7 @@ img{
     font-size: 10px;
   } */
 
-  .award__gallery__card,
-  .chennai-tour__gallery,
-  .asia__gallery,
-  .destination__card{
-    flex-basis: 40%;
-    flex-grow: 1;
-  }
+  
 
   .wanderer__container{
     flex-direction: column;
@@ -1091,6 +1093,42 @@ img{
   .categories__links{
     font-size: 10px;
     gap: 10px;
+  }
+
+  .award__gallery,
+  .chennai-tour__container,
+  .asia__container,
+  .explore__container,
+  .destination__container,
+  .rentals__container{
+    flex-wrap: nowrap;
+  }
+
+  .award__gallery,
+  .chennai-tour__container,
+  .asia__container,
+  .explore__container,
+  .destination__container,
+  .rentals__container{
+    overflow-x: auto;
+  }
+
+  .award__gallery::-webkit-scrollbar,
+  .chennai-tour__container::-webkit-scrollbar,
+  .asia__container::-webkit-scrollbar,
+  .explore__container::-webkit-scrollbar,
+  .destination__container::-webkit-scrollbar,
+  .rentals__container::-webkit-scrollbar{
+    width: 0;
+  }
+
+  .award__gallery__card,
+  .chennai-tour__gallery,
+  .asia__gallery,
+  .explore__card,
+  .destination__card,
+  .rentals__card{
+    min-width: 300px;
   }
 }
 
