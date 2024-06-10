@@ -465,6 +465,7 @@ img{
   background-color: #FAF1ED;
   border-radius: 10px;
   margin-bottom: 25px;
+  padding: 10px;
 }
 
 
@@ -1109,7 +1110,7 @@ img{
   .asia__container,
   .explore__container,
   .destination__container,
-  .rentals__container{
+  .rentals__s2{
     overflow-x: auto;
   }
 
@@ -1118,7 +1119,7 @@ img{
   .asia__container::-webkit-scrollbar,
   .explore__container::-webkit-scrollbar,
   .destination__container::-webkit-scrollbar,
-  .rentals__container::-webkit-scrollbar{
+  .rentals__s2::-webkit-scrollbar{
     width: 0;
   }
 
